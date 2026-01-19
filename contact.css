@@ -1,0 +1,286 @@
+/* --- Global Styles --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+    padding-top: 140px; /* Adjusted for the dual header height */
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* --- Header & Banner --- */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.top-banner {
+    background-color: #004a99; /* Professional Blue */
+    color: white;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.biz-name {
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.biz-phone {
+    font-size: 1.1rem;
+    color: #ffcc00; /* Caution Yellow */
+}
+
+nav {
+    background: #003366;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 15px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 25px;
+    font-weight: 600;
+    transition: 0.3s;
+    border-radius: 4px;
+}
+
+nav a:hover, nav a.active {
+    color: #ffcc00;
+    background-color: rgba(255,255,255,0.1);
+}
+
+/* --- Content Typography --- */
+h1, h2, h3 {
+    text-align: center;
+    color: #004a99;
+    margin-bottom: 20px;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { margin-top: 40px; }
+
+.intro-p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    font-size: 1.1rem;
+}
+
+/* --- Home Page Specifics --- */
+.car-image {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border: 5px solid white;
+}
+
+/* --- Table Style (Prices/Resources) --- */
+.price-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    margin-bottom: 50px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.price-table th {
+    background: #004a99;
+    color: white;
+    padding: 15px;
+    text-align: left;
+}
+
+.price-table td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.highlight-row {
+    background-color: #fff9e6;
+    font-weight: bold;
+}
+
+/* --- Package/Resource Cards --- */
+.package-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.package-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+}
+
+.package-card:hover {
+    transform: translateY(-5px);
+}
+
+.package-card.featured {
+    border: 2px solid #004a99;
+    transform: scale(1.03);
+}
+
+.card-header {
+    background: #004a99;
+    color: white;
+    padding: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.featured .card-header {
+    background: #d4a017; /* Gold color */
+}
+
+.card-body {
+    padding: 30px;
+    flex-grow: 1;
+}
+
+.card-features {
+    list-style: none;
+    margin: 20px 0;
+    padding: 0;
+    color: #666;
+    text-align: left;
+}
+
+.card-features li {
+    margin-bottom: 10px;
+}
+
+.card-features li::before {
+    content: "✓ ";
+    color: #008250;
+    font-weight: bold;
+}
+
+/* --- Buttons --- */
+.btn-book {
+    display: inline-block;
+    background: #004a99;
+    color: white !important;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    margin-top: auto;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-book:hover {
+    background: #003366;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.btn-gov {
+    background: #008250; /* Gov Green */
+}
+
+.btn-gov:hover {
+    background: #005a37;
+}
+
+/* --- Contact Form --- */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #004a99;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+/* --- Map & Footer --- */
+.map-box {
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    background: #333;
+    color: white;
+    margin-top: 50px;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+    body { padding-top: 180px; }
+    .top-banner {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+    .package-grid {
+        grid-template-columns: 1fr;
+    }
+    .package-card.featured {
+        transform: none;
+    }
+}
