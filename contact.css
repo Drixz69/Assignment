@@ -1,4 +1,4 @@
-/* --- Global Styles --- */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -10,7 +10,7 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: #f8f9fa;
-    padding-top: 140px; /* Adjusted for the dual header height */
+    padding-top: 140px; 
 }
 
 .container {
@@ -19,7 +19,7 @@ body {
     padding: 20px;
 }
 
-/* --- Header & Banner --- */
+
 header {
     position: fixed;
     top: 0;
@@ -31,7 +31,7 @@ header {
 }
 
 .top-banner {
-    background-color: #004a99; /* Professional Blue */
+    background-color: #004a99; 
     color: white;
     padding: 10px 40px;
     display: flex;
@@ -47,7 +47,7 @@ header {
 
 .biz-phone {
     font-size: 1.1rem;
-    color: #ffcc00; /* Caution Yellow */
+    color: #ffcc00; 
 }
 
 nav {
@@ -75,7 +75,7 @@ nav a:hover, nav a.active {
     background-color: rgba(255,255,255,0.1);
 }
 
-/* --- Content Typography --- */
+
 h1, h2, h3 {
     text-align: center;
     color: #004a99;
@@ -92,7 +92,7 @@ h2 { margin-top: 40px; }
     font-size: 1.1rem;
 }
 
-/* --- Home Page Specifics --- */
+
 .car-image {
     width: 100%;
     max-width: 700px;
@@ -104,7 +104,7 @@ h2 { margin-top: 40px; }
     border: 5px solid white;
 }
 
-/* --- Table Style (Prices/Resources) --- */
+
 .price-table {
     width: 100%;
     border-collapse: collapse;
@@ -130,7 +130,7 @@ h2 { margin-top: 40px; }
     font-weight: bold;
 }
 
-/* --- Package/Resource Cards --- */
+
 .package-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -168,7 +168,7 @@ h2 { margin-top: 40px; }
 }
 
 .featured .card-header {
-    background: #d4a017; /* Gold color */
+    background: #d4a017; 
 }
 
 .card-body {
@@ -194,7 +194,7 @@ h2 { margin-top: 40px; }
     font-weight: bold;
 }
 
-/* --- Buttons --- */
+
 .btn-book {
     display: inline-block;
     background: #004a99;
@@ -215,14 +215,14 @@ h2 { margin-top: 40px; }
 }
 
 .btn-gov {
-    background: #008250; /* Gov Green */
+    background: #008250; 
 }
 
 .btn-gov:hover {
     background: #005a37;
 }
 
-/* --- Contact Form --- */
+
 .contact-form {
     max-width: 600px;
     margin: 0 auto;
@@ -252,7 +252,7 @@ h2 { margin-top: 40px; }
     font-family: inherit;
 }
 
-/* --- Map & Footer --- */
+
 .map-box {
     width: 100%;
     height: 350px;
@@ -264,12 +264,12 @@ h2 { margin-top: 40px; }
 footer {
     text-align: center;
     padding: 40px;
-    background: #333;
+    background: #004a99;
     color: white;
     margin-top: 50px;
 }
 
-/* --- Responsive --- */
+
 @media (max-width: 768px) {
     body { padding-top: 180px; }
     .top-banner {
