@@ -1,5 +1,5 @@
 
-/* GENERAL RESET */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -11,15 +11,15 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: #f4f7f6;
-    /* Increased padding to account for taller header with banner */
+   
     padding-top: 120px; 
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-/* HEADER & NAV */
-header {
+
+header {         /* This is used to customise the header. The header also contains the nav*/
     background-color: #004a99; 
     width: 100%;
     position: fixed;
@@ -29,8 +29,8 @@ header {
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-/* New Banner for Name and Number */
-.banner {
+
+.banner {    /* This is the very top of the page conating the conetents of the phone number and the name of the website */
     background-color: #003366;
     color: white;
     padding: 10px 20px;
@@ -40,19 +40,19 @@ header {
     font-size: 0.9rem;
 }
 
-.banner-phone {
+.banner-phone {    /*This customizes the phone number in the banner*/
     font-weight: bold;
     color: #ffcc00;
 }
 
-nav ul {
+nav ul {       /*This customizes the Nav bar */
     display: flex;
     justify-content: center;
     list-style: none;
     padding: 15px 0;
 }
 
-nav a {
+nav a {   /*This makes the nav bar interactive*/
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -62,12 +62,12 @@ nav a {
     transition: background 0.3s ease;
 }
 
-nav a:hover, nav a.active {
+nav a:hover, nav a.active {      /* Colour of the nav bar */
     background-color: #003366;
-    color: #ffcc00; /* Caution Yellow */
+    color: #ffcc00; 
 }
 
-/* LAYOUT CONTAINERS */
+
 .container {
     max-width: 1000px;
     margin: 0 auto;
@@ -75,7 +75,7 @@ nav a:hover, nav a.active {
     flex: 1;
 }
 
-/* TYPOGRAPHY */
+
 h1 {
     text-align: center;
     color: #004a99;
@@ -96,7 +96,7 @@ p {
     font-size: 1.1rem;
 }
 
-/* IMAGES */
+
 .car-photo {
     width: 100%;
     max-width: 600px;
@@ -107,95 +107,8 @@ p {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-/* PRICING TABLES */
-.price-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    background: white;
-}
 
-.price-table th, .price-table td {
-    border: 1px solid #ddd;
-    padding: 15px;
-    text-align: left;
-}
 
-.price-table th {
-    background-color: #004a99;
-    color: white;
-}
-
-.price-table tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-/* BUTTONS (.gov style) */
-.gov-btn-container {
-    text-align: center;
-    margin: 30px 0;
-}
-
-a.gov-btn {
-    display: inline-block;
-    background-color: #008250; 
-    color: white;
-    padding: 15px 25px;
-    margin: 10px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 3px;
-    border-bottom: 3px solid #005a37;
-    transition: transform 0.2s;
-}
-
-a.gov-btn:hover {
-    background-color: #005a37;
-    transform: translateY(-2px);
-}
-
-/* FORMS */
-form {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.form-group {
-    margin-bottom: 15px;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.form-group input, .form-group textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-button[type="submit"] {
-    background-color: #004a99;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 4px;
-}
-
-button[type="submit"]:hover {
-    background-color: #003366;
-}
-
-/* MAP & FOOTER */
 iframe.map {
     width: 100%;
     height: 300px;
@@ -204,15 +117,11 @@ iframe.map {
 }
 
 footer {
-    background-color: #333;
+    background-color: #004a99;
     color: white;
     text-align: center;
     padding: 20px;
     margin-top: auto;
 }
 
-.social-links a {
-    color: #ffcc00;
-    margin: 0 10px;
-    text-decoration: none;
-}
+
